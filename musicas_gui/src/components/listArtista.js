@@ -96,6 +96,12 @@ export default class ListArtista extends Component {
               <h4>&nbsp;</h4>
               <div>
                 <label>
+                  <strong>Id:</strong>
+                </label>{" "}
+                {artistaSel.id}
+              </div>
+              <div>
+                <label>
                   <strong>Nome:</strong>
                 </label>{" "}
                 {artistaSel.nome}

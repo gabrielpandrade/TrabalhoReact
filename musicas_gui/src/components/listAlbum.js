@@ -96,6 +96,12 @@ export default class ListAlbum extends Component {
               <h4>&nbsp;</h4>
               <div>
                 <label>
+                  <strong>Id:</strong>
+                </label>{" "}
+                {albumSel.id}
+              </div>
+              <div>
+                <label>
                   <strong>Nome:</strong>
                 </label>{" "}
                 {albumSel.nome}
