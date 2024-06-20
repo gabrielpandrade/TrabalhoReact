@@ -26,35 +26,44 @@ class App extends Component {
                         <b><i>Playlist</i></b>
                       </Link>
                       <div className="navbar-nav mr-auto">
-                        <li className="nav_item">
-                          <Link to={"/listmusica"} className="nav-link">
-                            Listar Músicas
-                          </Link>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                            Músicas
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <Link to={"/listmusica"} className="nav-link black">
+                              Listar Músicas
+                            </Link>
+                            <Link to={"/addmusica"} className="nav-link black">
+                              Adicionar Músicas
+                            </Link>
+                          </div>
                         </li>
-                        <li className="nav_item">
-                          <Link to={"/addmusica"} className="nav-link">
-                            Adicionar Músicas
-                          </Link>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                            Artistas
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <Link to={"/listartista"} className="nav-link black">
+                              Listar Artistas
+                            </Link>
+                            <Link to={"/addartista"} className="nav-link black">
+                              Adicionar Artistas
+                            </Link>
+                          </div>
                         </li>
-                        <li className="nav_item">
-                          <Link to={"/listartista"} className="nav-link">
-                            Listar Artistas
-                          </Link>
-                        </li>
-                        <li className="nav_item">
-                          <Link to={"/addartista"} className="nav-link">
-                            Adicionar Artistas
-                          </Link>
-                        </li>
-                        <li className="nav_item">
-                          <Link to={"/listalbum"} className="nav-link">
-                            Listar Albuns
-                          </Link>
-                        </li>
-                        <li className="nav_item">
-                          <Link to={"/addalbum"} className="nav-link">
-                            Adicionar Albuns
-                          </Link>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                            Albuns
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <Link to={"/listalbum"} className="nav-link black">
+                              Listar Albuns
+                            </Link>
+                            <Link to={"/addalbum"} className="nav-link black">
+                              Adicionar Albuns
+                            </Link>
+                          </div>
                         </li>
                       </div>
                     </div>
